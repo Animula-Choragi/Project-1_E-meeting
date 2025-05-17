@@ -60,13 +60,20 @@ if (
       height: auto;
       /* background-color: #F7F6E9; */
       background-color: #efeee5;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .konten {
+      overflow: auto;
     }
   </style>
 </head>
 <body>
-  <?php
-  include "view/layouts/navbar.php";
-  include $content_page;
-  ?>
+  <?php include "view/layouts/navbar.php"; ?>
+  <div class="konten">
+    <?php include $content_page; ?>
+  </div>
 </body>
 </html>
