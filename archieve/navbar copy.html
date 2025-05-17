@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: cadetblue;
+    }
+
+    header nav {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav p:first-of-type {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      list-style-type: none;
+    }
+    
+    header nav p a {
+      text-decoration: none;
+      color: black;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: beige;
+    }   
+
+    header nav ul li a:hover {
+      color: aqua;
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    main {
+      height: 280px;
+      padding: 30px;
+      color: salmon;
+    }
+
+    main section {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section .tabel {
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    section .tabel th, td {
+      border: 1px solid black;
+      padding: 8px 10px;
+    }
+
+    section .tabel thead {
+      background-color: cadetblue;
+    }
+
+    section .tabel tbody > tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <p><a href="navbar.html">E-Meeting</a></p>
+      <ul>
+        <li><a href="calendar.php">Calendar</a></li>
+        <li><a href="list-meeting.php">List Meeting</a></li>
+      </ul>
+      <p>Selamat datang, user</p>
+    </nav>
+  </header>
+  <section>
+    <h2>Upcoming Events</h2> <br />
+    <table  class="tabel">
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Waktu</th>
+          <th>Lokasi</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+        </tr>
+        <tr>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+        </tr>
+        <tr>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+        </tr>
+        <tr>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+          <td>Ini</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <main>
+    <section>
+    </section>
+  </main> -->
+
+</body>
+</html>

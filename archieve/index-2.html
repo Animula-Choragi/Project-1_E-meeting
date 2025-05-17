@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    /* * {
+      box-sizing: border-box;
+    } */
+
+    body {
+      background-color: #F7F6E9;
+    }
+
+    h1 {
+      /* color: #008080; */
+      color: #2a5d84;
+      font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+
+    h2, h3, p {
+      font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+
+    p {
+      color: #555;
+    }
+
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      border: 1px solid #008080;
+      cursor: pointer;
+      margin: 5px 0;
+      min-width: 100px;
+      /* background-color: #B0B68F; */
+      /* background-color: #008080; */
+      background-color: #2a5d84;
+      color: #fff;
+      opacity: 0.9;
+    }
+
+    /* Hover effects */
+    button:hover {
+      opacity: 1;
+    }
+
+    /* Active/pressed state */
+    button:active {
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+      transform: translateY(1px);
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width:325px;
+      background-color: blueviolet;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 2px 4px #fff;
+      margin: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    hr {
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <main class="main-page">
+    
+    <section class="welcome" style="text-align: center;">
+      <h1 style="font-size: 2.8em; margin-bottom: 0; text-transform: uppercase;">Selamat Datang di Aplikasi E-Meeting</h1>
+      <p style="font-size: 1em;margin-top: 0;">Ini adalah platform untuk mengatur jadwal meeting dengan Google Calendar API</p>
+      <h3 style="font-weight: bold;">Waktu Server:  adfaf</h3>
+      <button onclick="location.href='auth.php?page=login_google';">
+        Masuk E-Meeting App
+      </button>
+    </section>
+  
+    <hr />
+  
+    <section class="about">
+      <h2 style="text-align: center; font-weight: 500; text-transform: uppercase">Tentang E-Meeting App</h2>
+      <p style="text-align: justify;">e-Meeting adalah solusi digital untuk mengelola rencana rapat Anda dengan lebih mudah, cepat, dan terorganisir. Dibangun sebagai aplikasi web berbasis PHP, e-Meeting memudahkan Anda dalam membuat, menjadwalkan, dan memantau kegiatan meeting secara efisien—semua dalam satu platform terpadu.</p>
+    
+      <p style="text-align: justify;">Dengan integrasi Google Calendar API, setiap agenda meeting yang Anda buat di e-Meeting akan otomatis tersinkron dengan akun Google Calendar Anda. Ini berarti Anda tidak perlu lagi mencatat ulang atau khawatir melewatkan jadwal penting. Semua data rapat akan langsung muncul di kalender pribadi Anda secara real-time, lengkap dengan pengingat dan detail yang relevan.</p>
+    </section>
+  
+    <hr/>
+
+    <section class="tools">
+      <h2  style="text-align: center; font-weight: 500; text-transform: uppercase">Tools</h2>
+      <div class="card-container">
+        <div class="card">
+         <img src="public/assets/images/calendar.png" alt="">
+         <div class="card-content">
+           <h3>Google Calendar API</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="public/assets/images/php.png" alt="">
+          <div class="card-content">
+            <h3>Native PHP</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="public/assets/images/mysql_cropped.png" alt="">
+          <div class="card-content">
+           <h3>MySQL</h3>
+          </div>
+        </div>
+        <div class="card">
+         <img src="public/assets/images/fc_cropped.png" alt="">
+          <div class="card-content">
+           <h3>FullCalendar</h3>
+         </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
