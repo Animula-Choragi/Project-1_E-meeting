@@ -9,8 +9,6 @@ if (!isset($_SESSION['user_id'])) {
 require 'config/db.php';
 require 'config/google-config.php';
 
-
-
 $page_title = 'Dashboard';
 $content_page = 'view/user/dashboard.php';
 
@@ -30,7 +28,7 @@ $pages = [
   'edit_meeting' => ['Edit Meetings', 'view/meetings/edit_meeting.php'],
   
   'list_meetings' => ['List Meetings', 'view/meetings/list_meetings.php'],
-  'meeting_detail' => ['Meeting Detail', 'view/meetings/meeting_detail.php'],
+  'meeting_detail' => ['Meeting Detail', 'view/meetings/meeting-detail.php'],
   'update_meeting' => ['Update Meetings', 'view/meetings/update_meeting.php'],
   
   'sync_google_calendar' => ['Sync Google Calendar', 'view/google/sync_google_calendar.php']
@@ -54,26 +52,16 @@ if (
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Meeting | <?php echo $page_title; ?></title>
-  <style>
-    body {
-      width: 100%;
-      height: auto;
-      /* background-color: #F7F6E9; */
-      background-color: #efeee5;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-    .konten {
-      overflow: auto;
-    }
-  </style>
+  <link rel="stylesheet" href="public/assets/style/style.css">
 </head>
-<body>
-  <?php include "view/layouts/navbar.php"; ?>
-  <div class="konten">
-    <?php include $content_page; ?>
-  </div>
+<body class="bg-default">
+  <main class="app-main">
+    <div class="app-header">
+      <?php include 'view/layouts/navbar.php'; ?>
+    </div>
+    <div class="app-content">
+      <?php include $content_page; ?>
+    </div>
+  </main>
 </body>
 </html>

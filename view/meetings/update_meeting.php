@@ -1,5 +1,6 @@
 <?php
 
+//  DATABASE SIDE //
 // Ambil data dari form
 $id = $_POST['id'];
 $title = $_POST['title'];
@@ -11,6 +12,10 @@ $location = $_POST['location'];
 
 // Update database
 $conn->query("UPDATE meetings SET title='$title', description='$description', start_date='$start_date', end_date='$end_date', guest='$guest', location='$location'  WHERE id=$id");
+
+
+
+// GOOGLE CALENDAR SIDE //
 
 // Ambil google_event_id dari database
 $result = $conn->query("SELECT google_event_id FROM meetings WHERE id=$id");
@@ -39,7 +44,7 @@ $event = $calendarService->events->get($calendarId, $eventId);
 $event->setSummary($title);
 $event->setDescription($description);
 $event->setLocation($location);
-$ecent->setAttendes($attendees);
+$event->setAttendes($attendees);
 
 // Atur waktu mulai dan selesai
 $event->setStart(new Google_Service_Calendar_EventDateTime([

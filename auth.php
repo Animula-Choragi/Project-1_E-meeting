@@ -8,7 +8,7 @@ session_start();
 if (isset($_SESSION['user_id']) && 
 (!isset($_GET['page']) || $_GET['page'] !== 'logout')
 ) {
-  header("Location: app.php");
+  header("Location: app.php?page=dashboard");
   exit();
 }
 
@@ -45,46 +45,13 @@ if (
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-meeting | <?php echo $page_title; ?></title>
-  <style>
-
-    body {
-      /* background */
-      /* background-repeat: no-repeat;
-      background-size: 100%;
-      background-image: url("public/assets/images/bg.jpeg"); */
-      background-color: #F7F6E9;
-    }
-
-    /* @media (max-width: 768px) {
-      html {
-        font-size: 65.5%;
-      }
-      body {
-        background 
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-image: url("public/assets/images/hey.jpg");
-      }
-    }*/
-
-    /*@media (max-width: 450px) {
-      html {
-        font-size: 55%;
-      }
-      body {
-        background-height: 100%;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-image: url("public/assets/images/ini.jpg");
-      }
-    } */
-
-  </style>
+  <link rel="stylesheet" href="public/assets/style/style.css">
 </head>
-<body>
-  <?php
-  include $content_page;
-  ?>
+<body class="bg-default">
+  <main class="auth-main">
+    <?php
+    include $content_page;
+    ?>
+  </main>
 </body>
 </html>
