@@ -18,13 +18,13 @@
             <label for="title">
               Judul Meeting
             </label>
-            <input class="form-input" type="text" name="title" id="title" required>
+            <input class="form-input" type="text" name="title" id="title" placeholder="Masukkan judul rapat" required>
           </div>
           <div class="input-field">
             <label for="location">
               Lokasi
             </label>
-            <input class="form-input" type="text" name="location" id="location">
+            <input class="form-input" type="text" name="location" id="location" placeholder="Masukkan lokasi rapat">
           </div>
         </div>
         <div class="input-group full-width-input">
@@ -32,7 +32,7 @@
             <label for="description">
               Deskripsi
             </label>
-            <textarea class="form-textarea" name="description" id="description" rows="8"></textarea>
+            <textarea class="form-textarea" name="description" id="description" rows="8" placeholder="Jelaskan detail rapat"></textarea>
           </div>
         </div>
         <div class="input-group row-inputs">
